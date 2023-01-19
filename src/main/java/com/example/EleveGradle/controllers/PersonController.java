@@ -39,10 +39,10 @@ public class PersonController {
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
-   // @PutMapping()
-  //  public ResponseEntity<?>  updatePerson (@RequestBody PersonDTO person){
-     //   return new ResponseEntity<>(iPersonService.update(person), HttpStatus.CREATED);
-   // }
+    @PutMapping()
+    public ResponseEntity<?>  updatePerson (@RequestBody PersonDTO person){
+        return new ResponseEntity<>(iPersonService.update(person), HttpStatus.CREATED);
+    }
 
 
 }
